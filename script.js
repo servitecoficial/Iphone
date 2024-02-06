@@ -5,7 +5,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
     // Verificar credenciales
     if ((username === 'Lautaro' && password === '445590') ||
-        (username === 'e' && password === '2') ||
+        (username === 'Florencia' && password === '1995') ||
         (username === 'r' && password === '3') ||
         (username === 't' && password === '4')) {
         document.getElementById('loginForm').style.display = 'none';
