@@ -40,11 +40,51 @@ function closePopup(popupId) {
     popup.style.display = 'none';
 }
 
+
+//calculadora
 document.getElementById('calculatorForm').addEventListener('submit', function(event) {
     event.preventDefault();
-    var num1 = parseFloat(document.getElementById('num1').value);
-    var num2 = parseFloat(document.getElementById('num2').value);
-    var result = num1 * num2;
-    document.getElementById('result').innerText = 'El valor aproximado de su desbloqueo seria: Ars$' + result;
+    var numToMultiply = parseFloat(document.getElementById('numToMultiply').value);
+    var iphoneModel = document.getElementById('iphoneModel').value;
+    var price = 0;
+    
+    // Obtener el precio correspondiente al modelo seleccionado
+    switch (iphoneModel) {
+        case '5S':
+            price = 10;
+            break;
+        case '6':
+            price = 16;
+            break;
+        case 'SE1':
+            price = 18;
+            break;
+        case '6S':
+            price = 18;
+            break;
+        case '7':
+            price = 32;
+            break;
+        case '7Plus':
+            price = 34;
+            break;
+        case '8':
+            price = 38;
+            break;
+        case '8Plus':
+            price = 38;
+            break;
+        case 'X':
+            price = 64;
+            break;
+        default:
+            break;
+    }
+    
+    // Calcular el precio total multiplicando el precio del iPhone por el número ingresado
+    var totalPrice = price * numToMultiply;
+    
+    // Mostrar el resultado
+    document.getElementById('result').innerText = 'El precio total es: $' + totalPrice + ' Ars Aproximadamente';
     document.getElementById('result').style.display = 'block';
 });

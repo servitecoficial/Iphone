@@ -31,28 +31,7 @@
             <button id="button1">ver si esta habilitado el imei</button>
             <br><br>
             <button id="button2">Modelo si esta en icloud</button>
-            <h2>Precio de dispositivos</h2>
-            <p>Los valores son aproximados se toman al valor del dolar blue venta a la hs del bypass</p>
-            Iphone 5S = $10DLS
-            <br>
-            Iphone 6/6Plus = 16DLS
-            <br>
-            Iphone SE 1st = 18DLS
-            <br>
-            Iphone 6S/&S Plus = 18DLS
-            <br>
-            _____________________________
-            <br>
-            Iphone 7 = 32Dls
-            <br>
-            Iphone 7plus =34Dls
-            <br>
-            Iphone 8 = 38Dls
-            <br>
-            Iphone 8Plus = 38Dls
-            <br>
-            Iphone X = 64Dls
-            <br>___________________________________________
+            <br><br>
             <center>
                 <div><iframe
                         style="width:220px;height:260px;border-radius:10px;box-shadow:2px 4px 4px rgb(0 0 0 / 25%);display:flex;justify-content:center;border:1px solid #bcbcbc"
@@ -60,41 +39,36 @@
             </center>
 
             <!--calcular-->
-            <div class="container">
-                <form id="calculatorForm">
-                    <h2>Calcula el valor aproximado de tu desbloqueo</h2>
-                    <div class="form-group">
-                        <label for="num1">Escribir el valor del Iphone:</label>
-                        <input type="number" id="num1" name="num1" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="num2">Escribir el valor del dolar blue venta:</label>
-                        <input type="number" id="num2" name="num2" required>
-                    </div>
-                    <button type="submit">Multiplicar</button>
-                </form>
-                <div id="result" style="display: none;"></div>
-            </div>
-        
-            <!--Fin calcular-->
-            <!-- Agrega más botones según sea necesario -->
-        </div>
-    </div>
-
-
-    <div id="popup1" class="popup" style="display: none;">
-        <div class="popup-content">
-            <span class="close" onclick="closePopup('popup1')">&times;</span>
-            <iframe id="iframe1" class="iframe" src="" frameborder="0"></iframe>
-        </div>
-    </div>
-
-    <div id="popup2" class="popup" style="display: none;">
-        <div class="popup-content">
-            <span class="close" onclick="closePopup('popup2')">&times;</span>
-            <iframe id="iframe2" class="iframe" src="" frameborder="0"></iframe>
-        </div>
-    </div>
+            <body>
+                <div class="container">
+                    <form id="calculatorForm">
+                        <h2>Calculadora de Precio de iPhones</h2>
+                        <div class="form-group">
+                            <label for="iphoneModel">Modelo de iPhone:</label>
+                            <select id="iphoneModel" name="iphoneModel">
+                                <option value="5S">iPhone 5S - $10 DLS</option>
+                                <option value="6">iPhone 6/6Plus - $16 DLS</option>
+                                <option value="SE1">iPhone SE 1st - $18 DLS</option>
+                                <option value="6S">iPhone 6S/6S Plus - $18 DLS</option>
+                                <option value="7">iPhone 7 - $32 DLS</option>
+                                <option value="7Plus">iPhone 7 Plus - $34 DLS</option>
+                                <option value="8">iPhone 8 - $38 DLS</option>
+                                <option value="8Plus">iPhone 8 Plus - $38 DLS</option>
+                                <option value="X">iPhone X - $64 DLS</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="numToMultiply">Valor Dolar Blue Venta:</label>
+                            <input type="number" id="numToMultiply" name="numToMultiply" required>
+                        </div>
+                        <button type="submit">Calcular Precio</button>
+                    </form>
+                    <div id="result" style="display: none;"></div>
+                </div>
+                <p>siempre corroborar precios por whatsapp los precios son a modo de información.
+                    <br>
+                    Los valores son tomados a la hs de finalizado el bypass.
+                </p>
     <!-- Agrega más divs de ventana emergente según sea necesario -->
     <center>
         <h2> Usuarios de Servitec fijos</h2>
@@ -104,7 +78,7 @@
         <h2> Precios de dispositivos</h2>
 
         <br>
-        <p>siempre corroborar precios por whatsapp los precios son a modo de información</p>
+        
     </center>
 
 
