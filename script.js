@@ -4,7 +4,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     var password = document.getElementById('password').value;
 
     // Verificar credenciales
-    if ((username === 'Lautaro' && password === '1') ||
+    if ((username === 'Lautaro' && password === '445590') ||
         (username === 'e' && password === '2') ||
         (username === 'r' && password === '3') ||
         (username === 't' && password === '4')) {
