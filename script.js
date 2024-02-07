@@ -77,14 +77,55 @@ document.getElementById('calculatorForm').addEventListener('submit', function(ev
         case 'X':
             price = 64;
             break;
+        case 'XR':
+                price = 110;
+                break;
+         case 'XS':
+            price = 110;
+            break;
+         case 'XSMax':
+            price = 115;
+            break;
+        
         default:
             break;
+     case '11':
+            price = 120;
+            break;
+         case '11Pro':
+            price = 145;
+            break;
+         case '11ProMax':
+            price = 155;
+            break;
+        case 'SE2Gen':
+            price = 115;
+            break;
+        case '12Mini':
+            price = 125;
+            break;
+        case '12':
+            price = 150;
+            break;
+        case '12Pro':
+            price = 165;
+            break;
+        case '12ProMax':
+            price = 175;
+            break;
+        case 'SE3Gen':
+            price = 125;
+            break;
+        case '13Mini':
+            price = 145;
+            break;
+        
     }
     
     // Calcular el precio total multiplicando el precio del iPhone por el número ingresado
     var totalPrice = price * numToMultiply;
     
     // Mostrar el resultado
-    document.getElementById('result').innerText = 'El precio total es: $' + totalPrice + ' Ars Aproximadamente';
+    document.getElementById('result').innerText = 'El valor total es: $' + totalPrice + ' Ars Aproximadamente';
     document.getElementById('result').style.display = 'block';
 });
