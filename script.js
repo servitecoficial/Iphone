@@ -6,7 +6,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     // Verificar credenciales
     if ((username === 'Lautaro' && password === '445590') ||
         (username === 'Florencia' && password === '1995') ||
-        (username === 'r' && password === '3') ||
+        (username === 'Invitado' && password === 'Invitado') ||
         (username === 't' && password === '4')) {
         document.getElementById('loginForm').style.display = 'none';
         document.getElementById('panel').style.display = 'block';
@@ -14,8 +14,6 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         alert('Usuario o contraseña incorrectos.');
     }
 });
-
-
 document.getElementById('button1').addEventListener('click', function() {
     openPopup('popup1', 'https://www.enacom.gob.ar/imei');
 });
@@ -23,10 +21,6 @@ document.getElementById('button1').addEventListener('click', function() {
 document.getElementById('button2').addEventListener('click', function() {
     openPopup('popup2', 'https://imeicheck.com/imei-check');
 });
-
-
-
-// Agrega más eventos de clic para botones adicionales según sea necesario
 
 function openPopup(popupId, url) {
     var popup = document.getElementById(popupId);

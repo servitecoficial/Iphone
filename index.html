@@ -25,22 +25,65 @@
         </form>
 
         <div id="panel" style="display: none;">
-            <img src="img/servitec.jpg" height="100">
-            <h2>Bienvenido al Panel de Usuarios servitec para clientes fijos</h2>
-         <center>   Para celulares de gama alta <br> desde el <b>XR</b>  hasta el <b>14 Pro Max</b> se recomienda que esten entre la version <b>15 a 16.6.1</b>  <br>
-            Los dispositivos tienen que estar <b>restablecidos</b> en pantalla <b>HELLO/HOLA</b> <br>
-            como en las fotos de abajo. <br> <br>
-            <img src="img/HELLOS.png" height="250"></center>
+            <img src="img/servitec.jpg" height="100"> <br>
+
+
+
+
+            <h2>Bienvenido al Panel de Usuarios servitec para clientes.</h2>
+            <br>
+            <!--botones-->
+
+            <div class="container">
+                <h4>Verifica el IMEI de tu iPHONE</h4> <img src="img/bandeja-sim-imei.jpg" height="100">
+                <br>
+                <p>Como puede ver en la imagen de arriba en <br> <b>la bandeja SIM</b> se encuentran <b>15 numeros</b>
+                    estos copielos y verifiquelos en <b>"Verificar IMEI"</b>. Si su dispositivo <b>es del 5
+                        a X</b> va a poder saber si el bypas puede ser a señal o a Wifi. <br>
+
+                    Si usted tiene un Iphone <b>superior al X hasta el 14 Pro Max</b> se puede habilitar linea Consiguiendo la
+                    Esim. y haciendo el Bypass.</p>
+                <p>Vas a poder verificar tu linea tanto en enacom como verificar si esta en icloud</p>
+                <button id="button1">Verificar IMEI</button>
+                <button id="button2">Verificar iCloud</button>
+
+                <div id="popup1" class="popup" style="display: none;">
+                    <div class="popup-content">
+                        <span class="close" onclick="closePopup('popup1')">&times;</span>
+                        <iframe id="iframe1" class="iframe" src="" frameborder="0"></iframe>
+                    </div>
+                </div>
+
+                <div id="popup2" class="popup" style="display: none;">
+                    <div class="popup-content">
+                        <span class="close" onclick="closePopup('popup2')">&times;</span>
+                        <iframe id="iframe2" class="iframe" src="" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Fin Botones-->
+            <center> Para celulares de <b>gama alta</b> <br> desde el <b>XR</b> hasta el <b>14 Pro Max</b> se recomienda
+                que
+                esten entre la version <b>15 a 16.6.1</b> <br>
+                Los dispositivos tienen que estar <b>restablecidos</b> en pantalla <b>HELLO/HOLA</b> <br>
+                como en las fotos de abajo. <br> <br>
+                <img src="img/HELLOS.png" height="250">
+            </center>
 
 
             <br>
-           <center> <p>Los modelos desde el <b>5 al X</b> se puede hacer bypass tranqulamente <br> <b>corroborar que el imei este activo</b> asi de esta manera sabra si queda a
-        <br><b>Señal/Wifi</b></p>
-            <img src="img/baja.png" height="200"></center>
-<br><h2>Desde esta parte vas a poder consultar el estado de tu iphone</h2>
-            <button id="button1">ver si esta habilitado el imei</button>
-            
-            <button id="button2">Modelo si esta en icloud</button>
+            <center>
+                <p>Los modelos desde el <b>5 al X</b> se puede hacer bypass tranqulamente <br> <b>corroborar que el imei
+                        este activo</b> asi de esta manera sabra si queda a
+                    <br><b>Señal/Wifi</b>
+                </p>
+                <img src="img/baja.png" height="200">
+            </center>
+            <br>
+            <h2>Desde esta parte vas a poder consultar el estado de tu iphone</h2>
+
             <br><br>
             <center>
                 <div><iframe
@@ -49,6 +92,7 @@
             </center>
 
             <!--calcular-->
+
             <body>
                 <div class="container">
                     <form id="calculatorForm">
@@ -78,7 +122,7 @@
                                 <option value="12ProMax">iPhone 12 Pro Max - $175 DLS</option>
                                 <option value="SE3Gen">iPhone SE 3RD GEN - $125 DLS</option>
                                 <option value="13Mini">iPhone 13 Mini - $145 DLS</option>
-                                
+
 
                             </select>
                         </div>
@@ -89,28 +133,30 @@
                         <button type="submit">Calcular Precio</button>
                     </form>
                     <br>
-                    <h1><div id="result" style="display: none;"></div></h1>
+                    <h1>
+                        <div id="result" style="display: none;"></div>
+                    </h1>
                 </div>
                 <p>siempre corroborar precios por whatsapp los precios son a modo de información.
                     <br>
                     Los valores son tomados a la hs de finalizado el bypass.
                 </p>
-    <!-- Agrega más divs de ventana emergente según sea necesario -->
-    <center>
-        <h2> Usuarios de Servitec fijos</h2>
-    </center>
+                <!-- Agrega más divs de ventana emergente según sea necesario -->
+                <center>
+                    <h2> Usuarios de Servitec fijos</h2>
+                </center>
 
-    <center>
-        <h2> Precios de dispositivos</h2>
+                <center>
+                    <h2> Precios de dispositivos</h2>
 
-        <br>
-        
-    </center>
+                    <br>
 
-
+                </center>
 
 
-    <script src="script.js"></script>
-</body>
+
+
+                <script src="script.js"></script>
+            </body>
 
 </html>
