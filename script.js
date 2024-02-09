@@ -123,3 +123,28 @@ document.getElementById('calculatorForm').addEventListener('submit', function(ev
     document.getElementById('result').innerText = 'El valor total es: $' + totalPrice + ' Ars Aproximadamente';
     document.getElementById('result').style.display = 'block';
 });
+
+
+ function calcularPrecio() {
+    // Obtener el valor seleccionado del select
+    const selectedValue = document.getElementById("iphoneModel").value;
+    console.log(selectedValue)
+    // Realizar la solicitud HTTP para obtener el valor de compra del dólar blue
+    fetch('https://dolarapi.com/v1/dolares/blue')
+        .then(response => response.json())
+        .then(data => {
+            const blueBuyValue = data.venta;
+            // Calcular el precio multiplicando el valor seleccionado por el valor de compra del dólar blue
+            const precioTotal = selectedValue * blueBuyValue;
+            // Mostrar el precio en el div result
+			  document.getElementById('result').style.display = 'block';
+            document.getElementById("result").textContent = `Cotizacion total: $${precioTotal.toFixed(2)} Aproximadamente`;
+        })
+        .catch(error => {
+            console.error('Se produjo un error al obtener los datos:', error);
+            // Manejar el error de alguna manera
+        });
+}
+
+// Llamar a la función calcularPrecio() al cargar la página
+window.onload = calcularPrecio;

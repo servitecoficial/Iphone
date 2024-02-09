@@ -101,40 +101,34 @@
                     <form id="calculatorForm">
                         <h2>Calculadora de Precio de iPhones</h2>
                         <div class="form-group">
-                            <label for="iphoneModel">Modelo de iPhone:</label>
-                            <select id="iphoneModel" name="iphoneModel">
-                                <option value="5S">iPhone 5S - $10 DLS</option>
-                                <option value="6">iPhone 6/6Plus - $16 DLS</option>
-                                <option value="SE1">iPhone SE 1st - $18 DLS</option>
-                                <option value="6S">iPhone 6S/6S Plus - $18 DLS</option>
-                                <option value="7">iPhone 7 - $32 DLS</option>
-                                <option value="7Plus">iPhone 7 Plus - $34 DLS</option>
-                                <option value="8">iPhone 8 - $38 DLS</option>
-                                <option value="8Plus">iPhone 8 Plus - $38 DLS</option>
-                                <option value="X">iPhone X - $64 DLS</option>
-                                <option value="XR">iPhone XR - $110 DLS</option>
-                                <option value="XS">iPhone XS - $110 DLS</option>
-                                <option value="XSMax">iPhone XS Max - $115 DLS</option>
-                                <option value="11">iPhone 11 - $120 DLS</option>
-                                <option value="11Pro">iPhone 11Pro - $145 DLS</option>
-                                <option value="11ProMax">iPhone 11Pro Max - $155 DLS</option>
-                                <option value="SE2Gen">iPhone SE 2ND GEN - $115 DLS</option>
-                                <option value="12Mini">iPhone 12 Mini - $125 DLS</option>
-                                <option value="12">iPhone 12 - $150 DLS</option>
-                                <option value="12Pro">iPhone 12 Pro - $165 DLS</option>
-                                <option value="12ProMax">iPhone 12 Pro Max - $175 DLS</option>
-                                <option value="SE3Gen">iPhone SE 3RD GEN - $125 DLS</option>
-                                <option value="13Mini">iPhone 13 Mini - $145 DLS</option>
-
+                            <label for="iphoneModel"><h2>Modelo de iPhone:</h2><br> selecciona el modelo y ve un aproximado del valor.</label>
+                            <select id="iphoneModel" name="iphoneModel" onchange="calcularPrecio()">
+                                <option value="10">iPhone 5S - $10 DLS</option>
+                                <option value="16">iPhone 6/6Plus - $16 DLS</option>
+                                <option value="18">iPhone SE 1st - $18 DLS</option>
+                                <option value="18">iPhone 6S/6S Plus - $18 DLS</option>
+                                <option value="32">iPhone 7 - $32 DLS</option>
+                                <option value="34">iPhone 7 Plus - $34 DLS</option>
+                                <option value="38">iPhone 8 - $38 DLS</option>
+                                <option value="38">iPhone 8 Plus - $38 DLS</option>
+                                <option value="64">iPhone X - $64 DLS</option>
+                                <option value="110">iPhone XR - $110 DLS</option>
+                                <option value="110">iPhone XS - $110 DLS</option>
+                                <option value="115">iPhone XS Max - $115 DLS</option>
+                                <option value="120">iPhone 11 - $120 DLS</option>
+                                <option value="145">iPhone 11Pro - $145 DLS</option>
+                                <option value="155">iPhone 11Pro Max - $155 DLS</option>
+                                <option value="115">iPhone SE 2ND GEN - $115 DLS</option>
+                                <option value="125">iPhone 12 Mini - $125 DLS</option>
+                                <option value="150">iPhone 12 - $150 DLS</option>
+                                <option value="165">iPhone 12 Pro - $165 DLS</option>
+                                <option value="175">iPhone 12 Pro Max - $175 DLS</option>
+                                <option value="125">iPhone SE 3RD GEN - $125 DLS</option>
+                                <option value="145">iPhone 13 Mini - $145 DLS</option>
 
                             </select>
                         </div>
-                        <div class="form-group">
-                            <label for="numToMultiply">Valor Dolar Blue Venta:</label>
-                            <input type="number" id="numToMultiply" name="numToMultiply" required>
-                        </div>
-                        <button type="submit">Calcular Precio</button>
-                    </form>
+ 
                     <br>
                     <h1>
                         <div id="result" style="display: none;"></div>
