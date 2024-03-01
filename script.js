@@ -84,34 +84,34 @@ document.getElementById('calculatorForm').addEventListener('submit', function(ev
         default:
             break;
      case '11':
-            price = 120;
+            price = 125;
             break;
          case '11Pro':
-            price = 145;
-            break;
-         case '11ProMax':
-            price = 155;
-            break;
-        case 'SE2Gen':
-            price = 115;
-            break;
-        case '12Mini':
-            price = 125;
-            break;
-        case '12':
             price = 150;
             break;
+         case '11ProMax':
+            price = 160;
+            break;
+        case 'SE2Gen':
+            price = 120;
+            break;
+        case '12Mini':
+            price = 130;
+            break;
+        case '12':
+            price = 155;
+            break;
         case '12Pro':
-            price = 165;
+            price = 170;
             break;
         case '12ProMax':
-            price = 175;
+            price = 180;
             break;
         case 'SE3Gen':
-            price = 125;
+            price = 130;
             break;
         case '13Mini':
-            price = 145;
+            price = 300;
             break;
         
     }
