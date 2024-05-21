@@ -7,6 +7,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     if ((username === 'Lautaro' && password === '445590') ||
         (username === 'Florencia' && password === '1995') ||
         (username === 'Invitado' && password === 'Invitado') ||
+        (username === 'Agustina' && password === 'Zuil2020') ||
         (username === 't' && password === '4')) {
         document.getElementById('loginForm').style.display = 'none';
         document.getElementById('panel').style.display = 'block';
